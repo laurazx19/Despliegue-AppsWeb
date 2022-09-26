@@ -1,0 +1,263 @@
+/*todo*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Advent Pro';
+    font-size: 22px;
+}
+
+
+/*--------------------CABECERA------------------------*/
+/*Logo cabecera*/
+.logo {
+    width: 180px;
+    height: 60px;
+    margin-left: 2%;
+    margin-top: 10px;
+    float: left;
+}
+
+/*nombre de la cabecera*/
+.sitio {
+    color: rgb(228, 46, 46);
+    letter-spacing: 5px;
+    font-size: 40px;
+    display: block;
+    float: left;
+    margin-left: 25%;
+    margin-top: 25px;
+    filter:drop-shadow(3px 3px 3px rgb(219, 123, 123));
+}
+
+/*----------------------MENU---------------------*/
+nav {
+    /*caja que contiene la cabecera*/
+    height: 100px;
+    border-bottom: rgb(228, 46, 46) solid 4px;
+    width: 100%;
+
+}
+
+/*posicion de los enlaces en caja*/
+nav ul {
+    float: right;
+    margin-right: 30px;
+    margin-top: 23px;
+}
+
+/*para poder ubicar una lista dentro de otra hacia abajo*/
+nav ul li {
+    display: inline-block;
+}
+
+/*ajustes de los enlaces en caja*/
+nav ul li a {
+    width: 130px;
+    border: solid 1px red;
+    text-align: center;
+    color: rgb(245, 0, 0);
+    display: block;
+    line-height: 50px;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    padding: 0 15px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background-color: red;
+}
+
+nav ul li:hover>ul {
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    /*mostrar la sublista*/
+}
+
+/*esconder y mostrar la sublista*/
+nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+nav ul ul li {
+    display: list-item;
+    /*ordenar como lista*/
+}
+
+/*-----------------CONTENIDO INDEX--------*/
+/*foto y texto index*/
+.fotoindex {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.textoindex {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.textoindex p {
+    padding: 20px;
+}
+
+/*-----------------------CONTENIDO DAW-----------------------------*/
+.texto-daw{
+    width: 40%;
+    margin: 5% 30% 0% 30%;
+    text-align: center;
+    
+}
+.texto-daw h1{
+    font-size: 50px;
+    border-bottom: 1px solid red;
+}
+table{
+    width: 70%;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    margin:5% 15% 5% 15%;
+    border-collapse: collapse;
+}
+table tr, td, th{
+    border: 2px solid black;
+}
+.ver{
+    color: #ffffff;
+    background-color: #09635e;
+}
+.cris{
+    background-color: rgb(115, 207, 200);
+}
+.blue{
+    color: #ffffff;
+    background-color: rgb(12, 12, 187);
+}
+.marron{
+    color: #ffffff;
+    background-color: #4d2f1f;
+}
+.rojo{
+    color: #ffffff;
+    background-color: red;
+}
+.morado{
+    color: #ffffff;
+    background-color: rgb(182, 49, 182);
+}
+.gris{
+    background-color: lightgray;
+}
+
+/*---------------------Contenido quienes somos-------------------*/
+
+.titulo{
+    width: 60%;
+    margin: 5% 20% 0% 20%;
+    text-align: center;
+}
+.titulo h1{
+    letter-spacing: 1px;
+    font-size: 45px;
+    margin-bottom: 5%;
+}
+.cl{/*cuando se escale lo hará mas despacio*/
+    transition: transform .5s;
+}
+.cl:hover{/*escalar al pasar el raton*/
+    transform: scale(1.3);
+}
+.titulo p{
+    margin: 5% 20% 5% 20%;
+    width: 60%;
+}
+.gif{
+    margin-bottom: 10%;
+}
+
+/*---------------------CONTACTO----------------------------------*/
+
+form{
+	margin:10% auto;
+	display:flex;
+	flex-flow:column;
+	width:40%;
+	background-color:white;
+	height:50%;
+	padding:20px;
+	align-items:center;
+	box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+	border-radius:10px;	
+}
+
+form h1{
+	font-size:40px;
+	margin-top:20px;
+	color:rgb(5, 100, 26);
+}
+
+input, textarea{
+	border:none;
+	resize: none;
+	outline:none;
+	padding:15px 0px;
+	width:80%;
+	margin:10px;
+	transition: all 300ms;
+	border-bottom:2px solid black;	
+}
+
+form ::placeholder{
+    
+}
+
+input:focus, textarea:focus{ /*cambia el color al pulsar para escribir*/
+	border-bottom-color: rgb(0, 255, 0);  
+}
+
+
+.men{
+	border:none;
+	outline:none;
+	background:rgb(5, 100, 26);
+	color:white;
+	margin:auto;
+	padding:3px;
+	width:150px;
+
+	box-shadow: rgba(0,0,0,0,7) 0px 0px 10px;
+	cursor:pointer;
+	transition:all 300ms;
+}
+
+.men:hover{
+	transform: scale(1.05);
+	box-shadow: rgba(0,0,0,0,9) 0px 0px 10px;
+}
+
+/*---------------------PIE DE PAGINA-----------------------------*/
+footer {
+    background-color: rgb(175, 8, 8);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.cont-info {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#pag {
+    text-align: right;
+    font-size: 16px;
+}
+
+.cont-info p {
+    font-size: 14px;
+}
